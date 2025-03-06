@@ -1,0 +1,82 @@
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background-image: url('assets/fundo.png');
+    background-position: bottom;
+    background-size: cover;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 90%;
+    position: relative;
+}
+
+h1 {
+    color: #ffffff;
+}
+
+#tempo {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #ffffff;
+    word-wrap: break-word;
+}
+
+.foto-casal {
+    width: 100%;
+    max-width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #ffffff;
+    margin-bottom: 30px;
+    margin-top: 15px;
+    animation: girar 25s linear infinite;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    background: url('disco.png') center/cover;
+}
+
+@keyframes girar {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.botao-musica {
+    background-color: #000000;
+    color: white;
+    border: 1px solid;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+.botao-musica:hover {
+    background-color: #000000;
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    #tempo {
+        font-size: 1em;
+    }
+}
